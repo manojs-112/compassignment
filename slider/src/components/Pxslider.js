@@ -34,14 +34,7 @@ const PxSlider = ({ images, parallaxIntensity = 0.2, slideContent = [] }) => {
     <div className="parallax-slider-container" ref={sliderRef}>
       <Parallax bgImage={images[currentSlide]} strength={200}>
         <div className="parallax-slide">
-          {slideContent[currentSlide] ? (
-            slideContent[currentSlide]
-          ) : (
-            <>
-              <h2>Slide {currentSlide + 1}</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </>
-          )}
+          {/* content */}
         </div>
       </Parallax>
       <button className="prev" onClick={() => changeSlide(-1)}>
