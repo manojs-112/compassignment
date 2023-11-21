@@ -1,0 +1,92 @@
+/* src/ParallaxSlider.css */
+.parallax-slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .parallax-slide {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2em;
+    transition: transform 0.5s ease-in-out; /* Parallax transition duration */
+  }
+  
+  .parallax-slide.active {
+    font-size: 2.5em;
+  }
+  
+  .slide-content {
+    text-align: center;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+    transition: color 0.3s ease-in-out; /* Transition for button color */
+  }
+  
+  .prev:hover,
+  .next:hover {
+    color: lightblue;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .parallax-slide {
+      font-size: 1.5em;
+    }
+  
+    .parallax-slide.active {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .parallax-slide {
+      font-size: 1.2em;
+    }
+  
+    .parallax-slide.active {
+      font-size: 1.5em;
+    }
+  
+    .prev,
+    .next {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .parallax-slide {
+      font-size: 1em;
+    }
+  
+    .parallax-slide.active {
+      font-size: 1.2em;
+    }
+  
+    .prev,
+    .next {
+      font-size: 16px;
+    }
+  }
+  
