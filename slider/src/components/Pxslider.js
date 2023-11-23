@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 import '../pxslider.css';
@@ -48,4 +47,3 @@ const PxSlider = ({ images, parallaxIntensity = 0.2, slideContent = [] }) => {
 };
 
 export default PxSlider;
-
