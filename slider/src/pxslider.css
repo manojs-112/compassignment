@@ -1,43 +1,44 @@
 
 .parallax-slider-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .parallax-slider {
-    display: flex;
-  }
-  
-  .slide {
-    flex: 0 0 100%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .prev,
-  .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: white;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-slider {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
   
   
   /* Responsive Styles */
